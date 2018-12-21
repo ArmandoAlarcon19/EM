@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AppContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Models.Cliente" />
+    <EntitySet Name="ClienteSucursals" EntityType="Models.ClienteSucursal" />
+    <EntitySet Name="Sucursals" EntityType="Models.Sucursal" />
+    <AssociationSet Name="FK__ClienteSu__Clien__656C112C" Association="Models.FK__ClienteSu__Clien__656C112C">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="ClienteSucursal" EntitySet="ClienteSucursals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ClienteSu__Sucur__66603565" Association="Models.FK__ClienteSu__Sucur__66603565">
+      <End Role="Sucursal" EntitySet="Sucursals" />
+      <End Role="ClienteSucursal" EntitySet="ClienteSucursals" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ClienteSucursals" Relationship="Models.FK__ClienteSu__Clien__656C112C" FromRole="Cliente" ToRole="ClienteSucursal" />
+  </EntityType>
+  <EntityType Name="ClienteSucursal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ClienteId" Type="Int32" />
+    <Property Name="SucursalId" Type="Int32" />
+    <NavigationProperty Name="Cliente" Relationship="Models.FK__ClienteSu__Clien__656C112C" FromRole="ClienteSucursal" ToRole="Cliente" />
+    <NavigationProperty Name="Sucursal" Relationship="Models.FK__ClienteSu__Sucur__66603565" FromRole="ClienteSucursal" ToRole="Sucursal" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ClienteSucursals" Relationship="Models.FK__ClienteSu__Sucur__66603565" FromRole="Sucursal" ToRole="ClienteSucursal" />
+  </EntityType>
+  <Association Name="FK__ClienteSu__Clien__656C112C">
+    <End Type="Models.Cliente" Role="Cliente" Multiplicity="0..1" />
+    <End Type="Models.ClienteSucursal" Role="ClienteSucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClienteSucursal">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ClienteSu__Sucur__66603565">
+    <End Type="Models.Sucursal" Role="Sucursal" Multiplicity="0..1" />
+    <End Type="Models.ClienteSucursal" Role="ClienteSucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClienteSucursal">
+        <PropertyRef Name="SucursalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

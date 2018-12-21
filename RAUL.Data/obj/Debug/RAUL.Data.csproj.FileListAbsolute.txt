@@ -1,0 +1,10 @@
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\RAUL.Data.dll.config
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\RAUL.Data.dll
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\RAUL.Data.pdb
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\EntityFramework.dll
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\EntityFramework.xml
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\obj\Debug\RAUL.Data.csprojResolveAssemblyReference.cache
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\obj\Debug\RAUL.Data.dll
+C:\Users\jalarcon\Documents\API Prueba\RAUL.ApiPrueba\RAUL.Data\obj\Debug\RAUL.Data.pdb

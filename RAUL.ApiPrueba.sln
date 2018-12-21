@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAUL.WebAPI", "RAUL.ApiPrueba\RAUL.WebAPI.csproj", "{B4923832-F75F-4BA4-AB86-2E3C60F7943E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAUL.Data", "RAUL.Data\RAUL.Data.csproj", "{091EEDF3-DA08-4595-9D70-01113AFCFDB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4923832-F75F-4BA4-AB86-2E3C60F7943E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4923832-F75F-4BA4-AB86-2E3C60F7943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4923832-F75F-4BA4-AB86-2E3C60F7943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4923832-F75F-4BA4-AB86-2E3C60F7943E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091EEDF3-DA08-4595-9D70-01113AFCFDB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091EEDF3-DA08-4595-9D70-01113AFCFDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091EEDF3-DA08-4595-9D70-01113AFCFDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091EEDF3-DA08-4595-9D70-01113AFCFDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
